@@ -1,0 +1,170 @@
+body{
+	margin: 0;
+	display: flex;
+    flex-direction: column;
+}
+
+.title{
+	text-align: center;
+	font-size: 30px;
+	margin: 5px 0 5px 0;
+}
+
+.topmenu{
+	justify-content: center;
+	text-align: center;
+	display: flex;
+	background-color: rgb(121, 145, 253);
+	height: 50px;
+    background: rgb(44,118,207);
+    background: radial-gradient(circle, rgba(44,118,207,1) 0%, rgba(121,168,223,1) 50%, rgba(124,183,255,1) 100%);
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.mainpage{
+	background-color: lightblue;
+	display: flex;
+    flex-direction: column;
+	height: 900px;
+}
+
+.MajorityOfCards{
+    margin: 0 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+}
+
+.card1, .card2, .card3, .card4{
+    border-radius: 50px;
+    width: 10%;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    transition: width 0.5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    cursor: pointer;   
+}
+
+.cardtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-weight: bold;
+}
+
+.card1:hover .cardtext, .card2:hover .cardtext, .card3:hover .cardtext, .card4:hover .cardtext {
+    opacity: 1; 
+}
+
+.card1{
+    background-image: url("images/shark.png");
+}
+
+.card2 {
+    background-image: url("images/turtle.png");
+}
+
+.card3 {
+    background-image: url("images/whale.png");
+}
+
+.card4 {
+    background-image: url("images/fish.png");
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover{
+    width: 30%;
+    transition: width 0.5s ease-in-out;
+    transform: scale(1.05);
+}
+
+.mainpage2{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bottomInfo{
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-weight: bold;
+    width: 70%;
+}
+
+.SharkCards{
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.SharkCard1, .SharkCard2, .SharkCard3{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    height: 80%;
+    background-color: #b0c1cf;
+    margin-right: 2%;
+    margin-left: 2%;
+    border: solid 7px  rgb(30, 116, 214);
+    border-radius: 40px;
+}
+
+.SharkImageArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+.SharkImageArea .SharkImage1{
+    width: 90%;
+    height: 90%;
+    background-image: url(images/shark.png);
+    border: solid 3px  rgb(105, 152, 206);
+    border-radius: 40px;
+    background-size: fill;
+    background-position: center;
+}
+
+.SharkTextArea{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    align-items: center;
+}
+
+.SharkText{
+    width: 95%;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    word-wrap: contain;
+}
+
+
+
+
+
+
+
+
+
